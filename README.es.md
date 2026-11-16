@@ -2,6 +2,8 @@
 
 [English](README.md) · **Español**
 
+📘 **Manual de usuario (PDF):** [Español](docs/Manual-de-usuario.pdf) · [English](docs/User-manual.pdf)
+
 Una [Agent Skill](https://agentskills.io/specification) que hace que tu agente de IA trabaje como
 un diseñador UX/UI senior: convierte requisitos, historias de usuario, procesos, capturas o código
 frontend en briefs de investigación, journeys, flujos de usuario, wireframes anotados, design
