@@ -1,0 +1,115 @@
+{
+  "$description": "Example design tokens (W3C Design Tokens Community Group format). Primitive layer + semantic layer. Fictional brand.",
+  "color": {
+    "neutral": {
+      "0": { "$type": "color", "$value": "#FFFFFF" },
+      "50": { "$type": "color", "$value": "#F5F7FA" },
+      "500": { "$type": "color", "$value": "#6B7280" },
+      "900": { "$type": "color", "$value": "#1A1F2B" }
+    },
+    "blue": {
+      "50": { "$type": "color", "$value": "#E8F1FB" },
+      "600": { "$type": "color", "$value": "#0B5CAD" },
+      "800": { "$type": "color", "$value": "#083F77" }
+    },
+    "red": {
+      "50": { "$type": "color", "$value": "#FDECEA" },
+      "700": { "$type": "color", "$value": "#B3261E" }
+    },
+    "green": {
+      "50": { "$type": "color", "$value": "#E7F5EC" },
+      "700": { "$type": "color", "$value": "#1E7A3E" }
+    },
+    "text": {
+      "default": { "$type": "color", "$value": "{color.neutral.900}" },
+      "muted": { "$type": "color", "$value": "{color.neutral.500}" },
+      "on-action": { "$type": "color", "$value": "{color.neutral.0}" }
+    },
+    "surface": {
+      "default": { "$type": "color", "$value": "{color.neutral.0}" },
+      "subtle": { "$type": "color", "$value": "{color.neutral.50}" }
+    },
+    "border": {
+      "input": { "$type": "color", "$value": "{color.neutral.500}" }
+    },
+    "action": {
+      "primary": {
+        "bg": { "$type": "color", "$value": "{color.blue.600}" },
+        "bg-hover": { "$type": "color", "$value": "{color.blue.800}" }
+      }
+    },
+    "feedback": {
+      "error": {
+        "text": { "$type": "color", "$value": "{color.red.700}" },
+        "bg": { "$type": "color", "$value": "{color.red.50}" }
+      },
+      "success": {
+        "text": { "$type": "color", "$value": "{color.green.700}" },
+        "bg": { "$type": "color", "$value": "{color.green.50}" }
+      }
+    },
+    "focus": {
+      "ring": { "$type": "color", "$value": "{color.blue.600}" }
+    }
+  },
+  "font": {
+    "family": {
+      "base": { "$type": "fontFamily", "$value": ["Inter", "system-ui", "sans-serif"] }
+    },
+    "size": {
+      "100": { "$type": "dimension", "$value": "0.875rem" },
+      "200": { "$type": "dimension", "$value": "1rem" },
+      "300": { "$type": "dimension", "$value": "1.25rem" },
+      "400": { "$type": "dimension", "$value": "1.5625rem" },
+      "500": { "$type": "dimension", "$value": "1.953rem" }
+    },
+    "weight": {
+      "regular": { "$type": "fontWeight", "$value": 400 },
+      "semibold": { "$type": "fontWeight", "$value": 600 }
+    },
+    "line-height": {
+      "body": { "$type": "number", "$value": 1.5 },
+      "heading": { "$type": "number", "$value": 1.25 }
+    }
+  },
+  "space": {
+    "1": { "$type": "dimension", "$value": "0.25rem" },
+    "2": { "$type": "dimension", "$value": "0.5rem" },
+    "3": { "$type": "dimension", "$value": "0.75rem" },
+    "4": { "$type": "dimension", "$value": "1rem" },
+    "6": { "$type": "dimension", "$value": "1.5rem" },
+    "8": { "$type": "dimension", "$value": "2rem" }
+  },
+  "radius": {
+    "sm": { "$type": "dimension", "$value": "0.25rem" },
+    "md": { "$type": "dimension", "$value": "0.5rem" },
+    "full": { "$type": "dimension", "$value": "9999px" }
+  },
+  "size": {
+    "target": {
+      "min": { "$type": "dimension", "$value": "1.5rem", "$description": "WCAG 2.5.8 minimum (24 CSS px)" },
+      "touch": { "$type": "dimension", "$value": "2.75rem", "$description": "Recommended touch target (44 CSS px)" }
+    }
+  },
+  "motion": {
+    "duration": {
+      "fast": { "$type": "duration", "$value": "120ms" },
+      "base": { "$type": "duration", "$value": "200ms" }
+    }
+  },
+  "$extensions": {
+    "intelligent-ux-ui-designer": {
+      "contrastPairs": [
+        { "fg": "color.text.default", "bg": "color.surface.default", "min": 4.5 },
+        { "fg": "color.text.muted", "bg": "color.surface.default", "min": 4.5 },
+        { "fg": "color.text.on-action", "bg": "color.action.primary.bg", "min": 4.5 },
+        { "fg": "color.text.on-action", "bg": "color.action.primary.bg-hover", "min": 4.5 },
+        { "fg": "color.feedback.error.text", "bg": "color.surface.default", "min": 4.5 },
+        { "fg": "color.feedback.error.text", "bg": "color.feedback.error.bg", "min": 4.5 },
+        { "fg": "color.feedback.success.text", "bg": "color.feedback.success.bg", "min": 4.5 },
+        { "fg": "color.border.input", "bg": "color.surface.default", "min": 3.0 },
+        { "fg": "color.focus.ring", "bg": "color.surface.default", "min": 3.0 }
+      ]
+    }
+  }
+}
